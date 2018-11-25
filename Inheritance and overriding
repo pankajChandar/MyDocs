@@ -1,0 +1,7 @@
+1. Overriding method cannot reduce the visibility of the parent method 
+2. Final method cannot be overridden 
+3. Static method cannot be overridden. If a static method gets created in sub class  with the same signature, it is considered as an independent method. Does not have any connection with the parent method 
+4. Child can throw any unchecked exception. NO restrictions. But checked exceptions should be narrower or same. Cannot broads the exception being thrown. 
+5. Checked exceptions - those that will be checked during compile time. Can be fixed by using a try, catch block or  declaring throws in the method . Examples : File Not found , Class not found 
+6. Unchecked exceptions. - These are not checked during compile time. Examples : Null pointer exceptions, ArrayIndexOut of bound 
+7. When  a new object of child is created, an object of parent will not be created. 
