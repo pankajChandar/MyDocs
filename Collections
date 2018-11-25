@@ -1,0 +1,12 @@
+arrayList vs hashset : 
+	1. No duplicates in hashset. 
+	2. hashset does not maintain the order while Arraylist does.  
+	3. Hashset can be looped only using an iterator. Normal for loop cannot be used 
+
+Hash map vs linked hashmap vs TreeMap : 
+    1. Hashmap does not maintain order, linked hash map maintains insertion order, TreeMap sorts the key and maintain the order . Hashcode orders the keys based on the hashcode . 
+    2. Performance : hash map is faster followed by linkedhashmap , TreeMap
+
+Comparable and Comparator : 
+	1.	Implementing comparable interface in the pogo, add a compareTo method.
+	2.	Create a comparator class by implementing comparator interface. Multiple variants of this calls can be created and 		used with sort accordingly. 
