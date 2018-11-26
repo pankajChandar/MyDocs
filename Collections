@@ -6,7 +6,22 @@ arrayList vs hashset :
 Hash map vs linked hashmap vs TreeMap : 
     1. Hashmap does not maintain order, linked hash map maintains insertion order, TreeMap sorts the key and maintain the order . Hashcode orders the keys based on the hashcode . 
     2. Performance : hash map is faster followed by linkedhashmap , TreeMap
+    3. For linkedHashmap, a doubly linked list is used. Which means, every item is linked across buckets in addition to the usual linking within the bucket 
+    
 
 Comparable and Comparator : 
 	1.	Implementing comparable interface in the pogo, add a compareTo method.
 	2.	Create a comparator class by implementing comparator interface. Multiple variants of this calls can be created and 		used with sort accordingly. 
+
+
+sets: 
+Hashset vs linkedhashset vs treeset 
+linked hashset - maintains insertion order 
+tree set - sorts the values based on comparator. if not comparator, natural order will be used 
+hashset and linkedhashset use equals() and hashcode() for comparison. tree set uses comparator ans does not use equals() or hashcode() 
+hashset and linkedhashset allows max of 1 null value. tree set does not allow nulls 
+
+hashmap vs hashtable(concurrenthashmap): 
+hashmap is not synchronized while hashtable is . 
+hashmap can be synchronized using collections.synchronizedMap() 
+hashtable does not allow null key 
