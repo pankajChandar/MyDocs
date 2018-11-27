@@ -1,0 +1,26 @@
+Serialiation: 
+-------------
+
+1. Transient and static fields will not be included during serialization 
+2. After deserializing, transient and static fields will be null 
+3. If serialVersionUID is not provided, a default value will be assigned. This may be vary depending on the JVM and produce undesriable results. 
+4. So, it is always recommended to created a verion id. 
+
+Concurrency : 
+-------------
+
+executorService : 
+maintains a thread pool and takes care of the submitted tasks. 
+exectute(Runnable) - does not return anything 
+submit(Runnable) - returns a future. however, the get method will retun null . 
+submit(Callable) - return a future 
+invokeAll(Callable) - waits until all the tasks are completed. once done, other tasks are cancelled 
+invokeAny(Callable) - waits until any one of the task completes. 
+
+java.util.concurrent.Executor class provides factory methods for thread pool creation 
+1. cachedPool - creates threads as needed. But will try to reuse the existing threads 
+2. Fixed thread pool - fixed number of threads 
+3. Single thread pool - only one thread 
+
+Questions : 
+1. what is the significance of execute(Runnable)
