@@ -13,8 +13,8 @@ Identifying micro services
 3. Further divisions can be based on the verb or noun corresponding to the service 
 4. for example shipping service, Coupons 
 
-API gateway 
-------------
+API gateway or API Composer
+----------------------------
 1. As there can be multiple services involved in a single business transaction, API gateway can be used to group these so that the client need not call these services individually 
 for example, an order placement might depend on product availability, credit limit and customer details. 
 2. An API gateway for order placement could take care of the above calls and complete the transaction. 
@@ -23,7 +23,6 @@ example : Spring cloud
 
 Service Registry 
 ----------------- 
-
 1. As the end point or the host details are dynamically assigned, it is always better to maintain the service end points in a registry. 
 2. When the service is booted in a server, it should register in the service registry. 
 example : Apache zookeeper can be used a service registry. 
