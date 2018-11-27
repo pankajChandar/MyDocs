@@ -22,5 +22,16 @@ java.util.concurrent.Executor class provides factory methods for thread pool cre
 2. Fixed thread pool - fixed number of threads 
 3. Single thread pool - only one thread 
 
+wait() 
+wait(specified Time)
+notify() 
+notifyAll() 
+
+volatile keyword - the read/write for these vaiables will not be saved local to the thread. it will always happen from main memory only 
+
+daemon thread vs user thread :
+daemon thread is something which will not prevent the JVM from shutting down. even if the daemon thread is running, the process can be terminated 
+Thread.setDaemon(true) will make the thread as Daemon. 
+
 Questions : 
 1. what is the significance of execute(Runnable)
