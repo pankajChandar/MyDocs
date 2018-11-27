@@ -15,9 +15,11 @@ Comparable and Comparator :
 
 
 sets: 
+
 Hashset vs linkedhashset vs treeset 
 linked hashset - maintains insertion order 
-tree set - sorts the values based on comparator. if not comparator, natural order will be used 
+tree set - sorts the values based on comparator. if not comparator, natural order will be used . 
+TREE set implments SortedSet and NavigableSet interfaces 
 hashset and linkedhashset use equals() and hashcode() for comparison. tree set uses comparator ans does not use equals() or hashcode() 
 hashset and linkedhashset allows max of 1 null value. tree set does not allow nulls 
 
@@ -25,3 +27,8 @@ hashmap vs hashtable(concurrenthashmap):
 hashmap is not synchronized while hashtable is . 
 hashmap can be synchronized using collections.synchronizedMap() 
 hashtable does not allow null key 
+
+Navigable Set/map: implemntations - treeset and treemap  
+
+This provides an extension over sorted set/map . 
+Provides some flexible methods like floor, ceiling which can be used to fetch the records which are lessert than or greater than the provided value 
