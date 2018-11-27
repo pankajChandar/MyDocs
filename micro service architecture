@@ -1,0 +1,34 @@
+Considerations while adapting micro service architecture 
+
+1. Each micro service should be independent of each other. 
+2. Should have an indenpendent database assigned to the service 
+3. Code repository should not be shared 
+4. Should be testabe independetly 
+
+
+Identifying micro services
+--------------------------
+1. Micro services can be segregated on the basis of business significance. 
+2. for example ordermanagment, Customer management , inventory management etc. 
+3. Further divisions can be based on the verb or noun corresponding to the service 
+4. for example shipping service, Coupons 
+
+API gateway 
+------------
+1. As there can be multiple services involved in a single business transaction, API gateway can be used to group these so that the client need not call these services individually 
+for example, an order placement might depend on product availability, credit limit and customer details. 
+2. An API gateway for order placement could take care of the above calls and complete the transaction. 
+example : Spring cloud 
+3. Circuit breakers can be added in the API gateway which can handle backend system failures 
+
+Service Registry 
+----------------- 
+
+1. As the end point or the host details are dynamically assigned, it is always better to maintain the service end points in a registry. 
+2. When the service is booted in a server, it should register in the service registry. 
+example : Apache zookeeper can be used a service registry. 
+3. Service registry can monitor the health of the end point and route requests accordinlgy. 
+
+other considerations : 
+----------------------
+1. Use a centralized logging service . example : Amazon cloud watch , Splunk , CLM (Centralized Log Management)
