@@ -25,7 +25,7 @@ Service Registry
 ----------------- 
 1. As the end point or the host details are dynamically assigned, it is always better to maintain the service end points in a registry. 
 2. When the service is booted in a server, it should register in the service registry. 
-example : Apache zookeeper can be used a service registry. 
+example : Apache zookeeper, netflix eureka can be used a service registry. 
 3. Service registry can monitor the health of the end point and route requests accordinlgy. 
 
 other considerations : 
