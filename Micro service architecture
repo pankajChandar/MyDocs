@@ -31,3 +31,12 @@ example : Apache zookeeper can be used a service registry.
 other considerations : 
 ----------------------
 1. Use a centralized logging service . example : Amazon cloud watch , Splunk , CLM (Centralized Log Management)
+
+
+Design patterns :
+-----------------
+1. Aggregator : Call each of the back end micro service, add some business logic based on the responses and send back to the client  
+2. Proxy : Same as aggregator, but no business logic resides in aggreagtor service 
+3. Chained : client --> ServiceA --> ServiceB --> ServiceC
+4. Branching : Calling mutiple micro service concurrently 
+5. Asynchrounus messaging : 
