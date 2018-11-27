@@ -1,0 +1,4 @@
+1. Transient and static fields will not be included during serialization 
+2. After deserializing, transient and static fields will be null 
+3. If serialVersionUID is not provided, a default value will be assigned. This may be vary depending on the JVM and produce undesriable results. 
+4. So, it is always recommended to created a verion id. 
