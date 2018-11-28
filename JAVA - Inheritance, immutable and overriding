@@ -7,11 +7,21 @@
 7. When  a new object of child is created, an object of parent will not be created. 
 
 Immutability : 
-
+-------------
 When making a class as immutable, primitive datatypes can be made immuatble by using the final keyword. However this will not be applicable for collections. 
 In order to make a collection as immutable, either make the collection as immutable by using Collections.ImmutableList(). This will avoid a new object being assigned to the existing one 
 Making the object as final will restrict adding new elements to the collection. 
 However, the above two conditions will still make the collection as completely immutable as the objects within the collection can be modified externally. 
 Only way to solve the above problem is to make the datatype of thae objects in the collection as Immutable. 
+Adding an element to a immutable list will throw run time error. java.lang.UnsupportedOperationException 
+Assinging a new object to a final collection will throw compile time error 
 
 
+final keyword 
+------------- 
+Primitive types : cannot be altered once intialized 
+collections : referenced objects can be modified if those are mutable 
+method : cannot be overriden 
+class : Cannot be inherited in a sub class 
+
+A final variable can be declared without initializing. This is called blank final variable. In this case, the variable should be initialized from the constructor. 
