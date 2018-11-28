@@ -28,7 +28,13 @@ hashmap is not synchronized while hashtable is .
 hashmap can be synchronized using collections.synchronizedMap() 
 hashtable does not allow null key 
 
-Navigable Set/map: implemntations - treeset and treemap  
+Concurrent Hashmap: 
+CHM is better than Collection.SynchronizedMaP because, CHM locks only a portion of the map based on the consistency level. 
+If there are 16 buckets, each bucket will have a seperate lock, so 16 threads can access the map concurrently.  
+CHM is fail safe. It is used when reads > writes. When reads = writes or reads < writes, the performace drops. 
+Good candidate for caching. 
+
+Navigable Set/map: implementations - treeset and treemap  
 
 This provides an extension over sorted set/map . 
 Provides some flexible methods like floor, ceiling which can be used to fetch the records which are lessert than or greater than the provided value 
