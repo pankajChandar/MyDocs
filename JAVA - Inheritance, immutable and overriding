@@ -5,3 +5,13 @@
 5. Checked exceptions - those that will be checked during compile time. Can be fixed by using a try, catch block or  declaring throws in the method . Examples : File Not found , Class not found 
 6. Unchecked exceptions. - These are not checked during compile time. Examples : Null pointer exceptions, ArrayIndexOut of bound 
 7. When  a new object of child is created, an object of parent will not be created. 
+
+Immutability : 
+
+When making a class as immutable, primitive datatypes can be made immuatble by using the final keyword. However this will not be applicable for collections. 
+In order to make a collection as immutable, either make the collection as immutable by using Collections.ImmutableList(). This will avoid a new object being assigned to the existing one 
+Making the object as final will restrict adding new elements to the collection. 
+However, the above two conditions will still make the collection as completely immutable as the objects within the collection can be modified externally. 
+Only way to solve the above problem is to make the datatype of thae objects in the collection as Immutable. 
+
+
