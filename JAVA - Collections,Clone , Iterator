@@ -38,3 +38,11 @@ Navigable Set/map: implementations - treeset and treemap
 
 This provides an extension over sorted set/map . 
 Provides some flexible methods like floor, ceiling which can be used to fetch the records which are lessert than or greater than the provided value 
+
+Cloning : 
+
+Should implment cloneable interface. However, compilor will not expect the clone method to be implmented as this is available in Object class.
+best approach is to override the clone method 
+Deep copy vs Shallow copy: 
+In shallow copy, only object refrences of the objects will be created in the cloned object. Values of the primitive data types will be copied 
+In Deep copy, a new object of the member variables will be created. 
