@@ -23,5 +23,4 @@ Primitive types : cannot be altered once intialized
 collections : referenced objects can be modified if those are mutable 
 method : cannot be overriden 
 class : Cannot be inherited in a sub class 
-
-A final variable can be declared without initializing. This is called blank final variable. In this case, the variable should be initialized from the constructor. 
+A final variable can be declared without initializing. This is called blank final variable. In this case, the variable should be initialized from the constructor. If not, it will cause compilation error 
