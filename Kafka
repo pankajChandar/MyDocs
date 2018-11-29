@@ -10,9 +10,12 @@
       Async - no ACK in this 
       Leader - When the message is written to the commit log by the leader, ACK is sent 
       Quorom - When the message is replicated to the quorom based on RF, ACK is sent. 
+8. Consumer level guarantee: 
+      Atleast once - once the consumer processes the data , offset will be incremented. problem with this approach iss if the offset update fails, data will be processed again
+      Atmost once - Once the consumer receives the message, offset will be incremented. If the processing fails, the message will be missed as the offse has been incremented. 
+      Kafka my default uses atleast once strategy. As the messages will have a key and using this key, the update operation would be idempotent. 
       
-8. Differences between Queue and Kafka 
+9. Differences between Queue and Kafka 
     a) ordering is not maintained by queues. even though data is committed sequentially, as the messages will be delivered to different instances, there is no guarantee that the messages will be processed in the same order 
     b) back tracking / reprocessing of data is not possible in queues. 
     c) mutiple consumer domains cannnot use the message. 
-
