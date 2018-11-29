@@ -1,0 +1,18 @@
+1.  Broker : each node in a cluster is called a broker 
+2.  Topic : caterogy to which messages are published 
+3.  Partition : each topic will be divided into several partitions. each partition should fit within a broker. A partition cannot span into multipe brokers 
+4.  Producer : connect to a broker and topic and publish messages. published message should have a key and th message. 
+    Based on the key, messages will be routed to partitions. At times, round robin also can be used for load balancing 
+5.  Consumer group  : multiple instances of a consumer is grouped as a consumer group. Kafka makes sure that every message in a topic is delivered to exactly 1 instance of the consumer group. 
+    how this is acheived ?  - each partition will be assigned to a specific instance in the consumer group. Block of messages from that partition will be delivered to that consumer instance only. 
+6.  Ordering guarantee : Ordering is guarenteed at the partition level. using the above principle, as messahes from a partition are sent only to a single consumer, ordering is maintained  
+7.  Delivery guarantee : Message delivery acknowledgment is at 3 levels 
+      Async - no ACK in this 
+      Leader - When the message is written to the commit log by the leader, ACK is sent 
+      Quorom - When the message is replicated to the quorom based on RF, ACK is sent. 
+      
+8. Differences between Queue and Kafka 
+    a) ordering is not maintained by queues. even though data is committed sequentially, as the messages will be delivered to different instances, there is no guarantee that the messages will be processed in the same order 
+    b) back tracking / reprocessing of data is not possible in queues. 
+    c) mutiple consumer domains cannnot use the message. 
+
