@@ -1,3 +1,10 @@
+methods:
+post - create a resource
+put - update or modify a resource 
+get - retrieve a resource 
+delete - delete a resource 
+patch - partially update a resource. put will replace the entire ressource. patch will do a delta only 
+
 JAX-RS is the java framework for restFul API. Jersey is the implementation of JAX-RS 
 
 Idempotent : All methods except POST are idempotent(Creates the same effect even when submitted multiple times)
