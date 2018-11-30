@@ -1,1 +1,30 @@
-Rest APIs
+JAX-RS is the java framework for restFul API. Jersey is the implementation of JAX-RS 
+
+Idempotent : All methods except POST are idempotent(Creates the same effect even when submitted multiple times)
+HATEOAS : Hypermedia as the engine of application state - this means, a link to other resources can be provided in the rest response 
+
+security
+--------
+Always use HTTPS 
+Prefer to hash the password 
+Use OAUTH when possible 
+Add timestamp in the request, this will let u decide if the request has reached within the specified time interval 
+Do not expose keys, credentials in the uri 
+
+SOAP vs REST 
+------------
+1. Soap is completely based on XML. Rest allows JSON.XMl,CSV and many more
+2. Only basic security features are availble for REST. JAX-WS provides a luxuriuos security feature for SOAP 
+3. Asynchrounous API : Rest provides good features for asyn calls. A response code with 202 and details to check back the status in future can be shared 
+
+Caching 
+--------
+cache-control methods :- 
+1. public - anyone like proxy servers can cache the response 
+2. private - only the end client can cache the response 
+3. no cache - nobody can cache the reponse 
+4. no store - can be cached in memory but not in disk 
+
+caching startegies :-
+time based -  maxAge 
+conditional - etag (Entity tag). if the resource has not changed, 304 code will be returned. something like the hascode of the correspondng object can be used as the etag.  
