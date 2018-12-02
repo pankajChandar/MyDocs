@@ -1,5 +1,6 @@
 
 Creational
+-----------
 1. Factory pattern 
 2. Singleton pattern 
 3. Builder pattern 
@@ -7,6 +8,7 @@ Creational
 5. Abstract factory 
 
 Structural 
+-----------
 1. Adapter 
 2. Bridge 
 3. Facade 
@@ -15,6 +17,7 @@ Structural
 6. Flyweight 
 
 Behavioral 
+-----------
 1. Iterator 
 2. Chain of responsibility 
 3. 
