@@ -18,3 +18,12 @@ Behavioral
 1. Iterator 
 2. Chain of responsibility 
 3. 
+
+concurrency 
+------------
+1. Balking - If the object is in an inappropriate state, then the method will not be executed. 
+For example, if there are 3 threads trying to access a method and the method will execute only if a boolean state--true, then other 2 threads cannot execute this method 
+2. Thread Pool  - Defines the number of threads that can work simultaneously. Tasks will be queued until a thread frees up and the freed thread will take a task from the queue 
+3. async method invocation - similar to future task in java. operations will be run in parallel and the currect thread is not blocked 
+4. Semaphore - Defines the number of concurrent threads to access a shared resource. example: An ATM with 4 kiosks 
+5. Mutex - sepaphore with number of threads =1 
