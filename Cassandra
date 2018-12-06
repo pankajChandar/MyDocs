@@ -36,3 +36,18 @@ This is an index that created on any column even after the table has been create
 Table can be queried using sec index, even if that column is not part of the primary key. 
 A sec index can be created on a column which is part of the composite primary key. 
 
+BASE theorem : 
+BA - Basically available - The database appears to work most of the time 
+S - Soft state - Event though there is no input, the state of the data might change due to eventual consistency 
+E - Eventually consistent - Over a period of time if there are no updates, the data will become consistent across all the nodes. 
+
+CAP theorem : 
+C- Consistency 
+A - Availbility 
+P - Partition Tolerence 
+for any database, is very hard to staisfy all the above 3 properties . 
+Examples - 
+CA - RDBMS
+AP - Cassandra 
+CP - Mongo 
+
