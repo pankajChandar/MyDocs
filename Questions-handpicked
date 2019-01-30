@@ -1,9 +1,9 @@
 Data Structures 
 ---------------
-1. what are stacks and queues ? what is the difference between these 2? 
+1. What are stacks and queues ? what is the difference between these 2? 
 2. Which data structure can be used for a situation like the back button in your browser ?
 3. What does dynamic array mean and can you give an implementation in java ?  
-4. which implmentation works better for inserts and why ? I do not care about the performance for reads or deletions. 
+4. which implementation works better for inserts and why ? I do not care about the performance for reads or deletions. 
 
 Java
 ----
