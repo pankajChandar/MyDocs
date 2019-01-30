@@ -1,3 +1,36 @@
-1. What datatype is best suited for storing sensitive data ? 
-2. How to ensure immutability on collections in an immutable class ? 
-3. 
+Data Structures 
+---------------
+1. what are stacks and queues ? what is the difference between these 2? 
+2. Which data structure can be used for a situation like the back button in your browser ?
+3. What does dynamic array mean and can you give an implementation in java ?  
+4. which implmentation works better for inserts and why ? I do not care about the performance for reads or deletions. 
+
+Java
+----
+1. What datatype is best suited for storing sensitive data ? for example String should not be used as this will remain in the string pool. use char array instead.  
+2. Which Map implemntation is best suited for multi threaded envs ? why ? 
+3. How can we make hashmap as thread safe ? What is the difference between concurrent hashmap and Collection.SynchronizedMap? 
+4. Can we declare a final variable without initializing ? 
+5. How to create an immutable class ? 
+5b. How to ensure immutability on collections in an immutable class ? the collections generic class should be immutable. making it final, u will not be able to add new elements. making it immutable, new objects cannot be assigned. 
+6. Can we override a static method from the parent class ? if we try to do so, what will happen ?
+7. what are the 2 main types of cloning an object ? can u explain each of them ? 
+8. what are the classification of design patterns ? can u explain how u implmented any one of these in your previous project ?
+9. What is the difference btween a daemon thread and user thread ? 
+10. What are checked and unchecked exceptions ? 
+
+Spring
+------
+1. What is dependecny injection and what are its benefits? 
+2. What are the 2 ways to implement DI to sprng? xml and annotation based. 
+3. Can you name some of the spring annotation u have used in your projects ?
+
+Rest
+----
+1. what is idempotency ? 
+2. what are the methods supported by rest ? ecplain each of them 
+
+Angular-JS 
+----------
+1. Which version of angular have u used ? 
+
