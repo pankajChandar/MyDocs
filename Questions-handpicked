@@ -24,11 +24,13 @@ Spring
 1. What is dependecny injection and what are its benefits? 
 2. What are the 2 ways to implement DI to sprng? xml and annotation based. 
 3. Can you name some of the spring annotation u have used in your projects ?
+4. spring scopes ? 
+5. are singleton bean thread safe ? if not how can we ensure singleton beans are thread safe ? 
 
 Rest
 ----
 1. what is idempotency ? 
-2. what are the methods supported by rest ? ecplain each of them 
+2. what are the methods supported by rest ? explain each of them 
 
 Angular-JS 
 ----------
