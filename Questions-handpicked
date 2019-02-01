@@ -19,6 +19,8 @@ Java
 10. What are checked and unchecked exceptions ? can you an example for each ? 
 11. What is the need for a string builder or string buffer when i can just concat values to an existing string ? How string vuilder works internally? 
 12. what is a thread pool ? Explain a few common ones used in java 
+13. Optional class in java8 ? how to check if the value is present and got to fetch the value ? 
+13. Write a program to remove the duplicates from a given list.How would u do it with java 7 ? can u rewrite the logic using java 8 ?
 
 Spring
 ------
@@ -32,6 +34,7 @@ Rest
 ----
 1. what is idempotency ? 
 2. what are the methods supported by rest ? explain each of them 
+3. mention some the http response codes and what does that mean ? 
 
 Angular-JS 
 ----------
