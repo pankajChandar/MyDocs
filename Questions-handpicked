@@ -21,6 +21,7 @@ Java
 12. what is a thread pool ? Explain a few common ones used in java 
 13. Optional class in java8 ? how to check if the value is present and got to fetch the value ? 
 13. Write a program to remove the duplicates from a given list.How would u do it with java 7 ? can u rewrite the logic using java 8 ?
+14. What is a static block and non static block ? for non static block what is the order in which the code gets executed if a constructor is present. 
 
 Spring
 ------
