@@ -38,5 +38,10 @@ Rest
 
 Angular-JS 
 ----------
-1. Which version of angular have u used ? 
+1. Which version of angular have u used ?
+
+SQL
+---
+1. Difference between char and varchar 
+2. Can you wite a query to fetch all the records with column value that starts with A and ends with X. in the result set, values should be displayed in upper case 
 
