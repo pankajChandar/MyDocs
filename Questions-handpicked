@@ -18,14 +18,15 @@ Java
 9. What is the difference between a daemon thread and user thread ? 
 10. What are checked and unchecked exceptions ? can you an example for each ? 
 11. What is the need for a string builder or string buffer when i can just concat values to an existing string ? How string vuilder works internally? 
+12. what is a thread pool ? Explain a few common ones used in java 
 
 Spring
 ------
 1. What is dependecny injection and what are its benefits? 
 2. What are the 2 ways to implement DI to sprng? xml and annotation based. 
 3. Can you name some of the spring annotation u have used in your projects ?
-4. spring scopes ? 
-5. are singleton bean thread safe ? if not how can we ensure singleton beans are thread safe ? 
+4. Spring scopes ? 
+5. Are singleton bean thread safe ? if not how can we ensure singleton beans are thread safe ? 
 
 Rest
 ----
