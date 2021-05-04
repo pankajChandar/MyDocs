@@ -9,6 +9,12 @@ Serialiation:
 Concurrency : 
 -------------
 
+1. What are the different ways to make a variable thread safe ? 
+AtomicReference 
+Synchronised  getter and setter 
+Use lock interface to lock the getter and setter 
+2. what is a volatile variable ? 
+
 executorService : 
 maintains a thread pool and takes care of the submitted tasks. 
 exectute(Runnable) - does not return anything 
